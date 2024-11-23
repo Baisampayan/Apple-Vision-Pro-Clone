@@ -30,3 +30,17 @@ function LocomotiveJs(){
 
 }
 LocomotiveJs()
+
+// Starting the video after scroll
+gsap.to("#section-1 video", {
+    ScrollTrigger: {
+        trigger: `#section-1 video`,
+        start: "10% top",
+        end: "bottom top",
+        markers: true,
+        scroller: "#main"
+    },
+    onStart: () => {
+        document.querySelector("#section-1 video").play();
+    }
+})
