@@ -37,10 +37,34 @@ gsap.to("#section-1 video", {
         trigger: `#section-1 video`,
         start: "2% top",
         end: "bottom top",
-        markers: true,
+        // markers: true,
         scroller: "#main"
     },
     onStart: () => {
         document.querySelector("#section-1 video").play();
     }
 })
+
+// gsap.to("#section-1",{
+//     scrollTrigger:{
+//         trigger:`#section-1`,
+//         start:`5% top`,
+//         end:`bottom top`,
+//         scroller:`#main`,
+//         markers: true,
+//         pin:true
+//     }
+// })
+
+
+// gsap.to("#section-1-element",{
+//     scrollTrigger:{
+//         trigger:`#section-1-element`,
+//         start:`5% top`,
+//         end:`bottom top`,
+//         markers: true,
+//         scroller:`#main`
+        
+//     },
+//     opacity:0
+// })
