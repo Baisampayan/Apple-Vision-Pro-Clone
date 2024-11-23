@@ -21,13 +21,13 @@ html, body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #000000;
 }
 
 #navigation {
     position: relative;
     height: 7vh;
     background-color: #fbfbfd;
+    z-index: 1;
 }
 
 #navigation > nav {
@@ -91,6 +91,44 @@ html, body {
 #nav-elements > #btn-2:hover {
     background-color: transparent;
     color: #0071e8;
+}
+
+#section-1 video {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#section-1-element {
+    position: absolute;
+    height: 20%;
+    width: 25%;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#section-1-element > img {
+    padding-bottom: 20px;
+}
+
+#section-1-element > h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ff5a00;
+    cursor: pointer;
+}
+
+#section-1-element > h3:hover {
+    text-decoration: underline;
 }
 
 #section-2 {
