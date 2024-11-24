@@ -138,8 +138,8 @@ function canvas(){
             trigger: `#section-3`,
             start: `top top`,
             end: `100% top`,
-            scroller: `#main`,
-            markers: true
+            scroller: `#main`
+            // markers: true
         },
         onUpdate: render,
     });
