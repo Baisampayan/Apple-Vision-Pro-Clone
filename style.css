@@ -96,7 +96,7 @@ html, body {
 #section-1 video {
     position: absolute;
     width: 50vw;
-    height: 100vh;
+    height: 110vh;
     object-fit: cover;
     left: 50%;
     transform: translate(-50%);
