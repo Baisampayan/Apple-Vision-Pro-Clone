@@ -45,16 +45,16 @@ gsap.to("#section-1 video", {
     }
 })
 
-// gsap.to("#section-1",{
-//     scrollTrigger:{
-//         trigger:`#section-1`,
-//         start:`5% top`,
-//         end:`bottom top`,
-//         scroller:`#main`,
-//         markers: true,
-//         pin:true
-//     }
-// })
+gsap.to("#section-1",{
+    scrollTrigger:{
+        trigger:`#section-1`,
+        start:`5% top`,
+        end:`bottom top`,
+        scroller:`#main`,
+        // markers: true,
+        pin:true
+    }
+})
 
 
 // gsap.to("#section-1-element",{
@@ -62,9 +62,22 @@ gsap.to("#section-1 video", {
 //         trigger:`#section-1-element`,
 //         start:`5% top`,
 //         end:`bottom top`,
-//         markers: true,
 //         scroller:`#main`
-        
 //     },
 //     opacity:0
 // })
+
+var timeLine = gsap.timeline({
+    scrollTrigger: {
+        trigger: `#section-2`,
+        start: `top top`,
+        scrub: 1,
+        scroller:`#main`,
+        markers: true,
+        pin: true
+    }
+})
+
+timeLine.to("#section-2>.sect-2-elements", {
+    bottom: "40%",
+})

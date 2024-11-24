@@ -137,3 +137,47 @@ html, body {
     height: 100vh;
     background-color: #ffffff;
 }
+
+#section-2 video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.sect-2-elements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 6;
+    padding-bottom: 2vh;
+}
+
+.sect-2-elements p {
+    font-size: 2.5vw;
+    color: #ffffff;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.sect-2-elements > button {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid #e4660f;
+    color: #e4660f;
+}
+
+.sect-2-elements > button:hover {
+    background-color: #e4660f;
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
