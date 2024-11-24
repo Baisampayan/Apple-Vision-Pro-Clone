@@ -79,5 +79,5 @@ var timeLine = gsap.timeline({
 })
 
 timeLine.to("#section-2>.sect-2-elements", {
-    top: "-40%",
+    top: "-30%",
 })

@@ -154,7 +154,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     z-index: 6;
-    padding-bottom: 2vh;
 }
 
 .sect-2-elements p {
