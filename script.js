@@ -73,7 +73,7 @@ var timeLine = gsap.timeline({
         start: `top top`,
         scrub: 1,
         scroller:`#main`,
-        markers: true,
+        // markers: true,
         pin: true
     }
 })
@@ -81,3 +81,101 @@ var timeLine = gsap.timeline({
 timeLine.to("#section-2>.sect-2-elements", {
     top: "-30%",
 })
+
+// CANVAS CODE
+function canvas(){
+    const canvas = document.querySelector("#section-3>canvas");
+    const context = canvas.getContext("2d");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+
+    window.addEventListener("resize", function () {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        render();
+    });
+
+    function files(index) {
+        var data = `
+        ./assets/images/videoframe_1030.png
+        ./assets/images/videoframe_1310.png
+        ./assets/images/videoframe_1590.png
+        ./assets/images/videoframe_1870.png
+        ./assets/images/videoframe_2140.png
+        ./assets/images/videoframe_2420.png
+        ./assets/images/videoframe_2700.png
+        ./assets/images/videoframe_2980.png
+        ./assets/images/videoframe_3260.png
+        ./assets/images/videoframe_3540.png
+        ./assets/images/videoframe_3820.png
+        ./assets/images/videoframe_4090.png
+        ./assets/images/videoframe_4360.png
+        `;
+        return data.split("\n")[index];
+    }
+
+    const frameCount = 14;
+
+    const images = [];
+    const imageSeq = {
+        frame: 1,                                                                               
+    };
+
+    for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = files(i);
+        images.push(img);
+    }
+
+    gsap.to(imageSeq, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: `none`,
+        scrollTrigger: {
+            scrub: .5,
+            trigger: `#section-3`,
+            start: `top top`,
+            end: `100% top`,
+            scroller: `#main`,
+            markers: true
+        },
+        onUpdate: render,
+    });
+
+    images[1].onload = render;
+
+    function render() {
+        scaleImage(images[imageSeq.frame], context);
+    }
+
+    function scaleImage(img, ctx) {
+    var canvas = ctx.canvas;
+    var hRatio = canvas.width / img.width;
+    var vRatio = canvas.height / img.height;
+    var ratio = Math.max(hRatio, vRatio);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+            img,
+            0,
+            0,
+            img.width,
+            img.height,
+            centerShift_x,
+            centerShift_y,
+            img.width * ratio,
+            img.height * ratio
+        );
+    }
+    ScrollTrigger.create({
+    trigger: "#section-3",
+    pin: true,
+    scroller: `#main`,
+    start: `top top`,
+    end: `100% top`,
+    });
+}
+canvas()
