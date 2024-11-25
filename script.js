@@ -136,8 +136,8 @@ function canvas(){
         scrollTrigger: {
             scrub: .5,
             trigger: `#section-3`,
-            start: `top top`,
-            end: `100% top`,
+            start: `top 30%`,
+            end: `100% bottom`,
             scroller: `#main`
             // markers: true
         },
@@ -174,8 +174,8 @@ function canvas(){
     trigger: "#section-3",
     pin: true,
     scroller: `#main`,
-    start: `top top`,
-    end: `100% top`,
+    start: `top 0%`,
+    end: `100% bottom`,
     });
 }
 canvas()
