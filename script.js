@@ -194,3 +194,18 @@ var timeLine2 = gsap.timeline({
 timeLine2.to("#section-4>.sect-4-elements", {
     top: "-30%",
 })
+
+var timeLine3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: `#section-6`,
+        start: `top top`,
+        scrub: 1,
+        scroller:`#main`,
+        // markers: true,
+        pin: true
+    }
+})
+
+timeLine3.to("#section-6>.sect-6-elements", {
+    top: "-30%",
+})
