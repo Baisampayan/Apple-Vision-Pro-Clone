@@ -231,7 +231,7 @@ html, body {
     padding-bottom: 40px;
 }
 
-#section-5, #section-7, #section-9 {
+#section-5, #section-7, #section-9, #section-11 {
     position: relative;
     background-color: #ffffff;
     height: 60vh;
@@ -241,22 +241,22 @@ html, body {
     align-items: center;
 }
 
-.sec-5-left, .sec-5-right, .sec-7-left, .sec-7-right, .sec-9-left, .sec-9-right {
+.sec-5-left, .sec-5-right, .sec-7-left, .sec-7-right, .sec-9-left, .sec-9-right, .sec-11-left, .sec-11-right {
     width: 50%;
     height: 100%;
 }
 
-.sec-5-left, .sec-7-left, .sec-9-left {
+.sec-5-left, .sec-7-left, .sec-9-left, .sec-11-left {
     display: flex;
     align-items: flex-start;
 }
 
-.sec-5-left h3, .sec-7-left h3,.sec-9-left h3 {
+.sec-5-left h3, .sec-7-left h3, .sec-9-left h3, .sec-11-left h3 {
     font-size: 2.5rem;
     padding-left: 5vw;
 }
 
-.sec-5-right p, .sec-7-right p, .sec-9-right p {
+.sec-5-right p, .sec-7-right p, .sec-9-right p, .sec-11-right p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -264,7 +264,7 @@ html, body {
     padding-right: 5vw;
 }
 
-.sec-5-right > button, .sec-7-right > button, .sec-9-right > button {
+.sec-5-right > button, .sec-7-right > button, .sec-9-right > button, .sec-11-right > button {
     margin-top: 60px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -274,7 +274,8 @@ html, body {
     border: 3px solid #ff5a00;
     color: #ffffff;
 }
-.sec-5-right > button:hover, .sec-7-right > button:hover, .sec-9-right > button:hover {
+
+.sec-5-right > button:hover, .sec-7-right > button:hover, .sec-9-right > button:hover, .sec-11-right > button:hover {
     background-color: #ff7d20;
     color: #ffffff;
     cursor: pointer;
