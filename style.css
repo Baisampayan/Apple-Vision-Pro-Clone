@@ -131,20 +131,20 @@ html, body {
     text-decoration: underline;
 }
 
-#section-2, #section-4, #section-6, #section-8, #section-10 {
+#section-2, #section-4, #section-6, #section-8, #section-10, #section-12 {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
 }
 
-#section-2 video, #section-4 video, #section-6 video, #section-8 video, #section-10 video {
+#section-2 video, #section-4 video, #section-6 video, #section-8 video, #section-10 video, #section-12 video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
 
-.sect-2-elements, .sect-4-elements, .sect-6-elements, .sect-8-elements, .sect-10-elements {
+.sect-2-elements, .sect-4-elements, .sect-6-elements, .sect-8-elements, .sect-10-elements, .sect-12-elements {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,12 +219,12 @@ html, body {
     transition: ease-in-out 0.5s;
 }
 
-.sect-4-elements h4, .sect-6-elements h4, .sect-8-elements h4, .sect-10-elements h4 {
+.sect-4-elements h4, .sect-6-elements h4, .sect-8-elements h4, .sect-10-elements h4, .sect-12-elements h4 {
     font-size: 1vw;
     color: #ffffff;
 }
 
-.sect-4-elements p, .sect-6-elements p, .sect-8-elements p, .sect-10-elements p {
+.sect-4-elements p, .sect-6-elements p, .sect-8-elements p, .sect-10-elements p, .sect-12-elements p {
     font-size: 4vw;
     color: #ffffff;
     font-weight: 600;
