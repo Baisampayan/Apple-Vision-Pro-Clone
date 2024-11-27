@@ -131,20 +131,20 @@ html, body {
     text-decoration: underline;
 }
 
-#section-2, #section-4, #section-6, #section-8, #section-10, #section-12 {
+#section-2, #section-4, #section-6, #section-8, #section-10, #section-12, #section-14 {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
 }
 
-#section-2 video, #section-4 video, #section-6 video, #section-8 video, #section-10 video, #section-12 video {
+#section-2 video, #section-4 video, #section-6 video, #section-8 video, #section-10 video, #section-12 video, #section-14 video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
 
-.sect-2-elements, .sect-4-elements, .sect-6-elements, .sect-8-elements, .sect-10-elements, .sect-12-elements {
+.sect-2-elements, .sect-4-elements, .sect-6-elements, .sect-8-elements, .sect-10-elements, .sect-12-elements, .sect-14-elements {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,19 +219,19 @@ html, body {
     transition: ease-in-out 0.5s;
 }
 
-.sect-4-elements h4, .sect-6-elements h4, .sect-8-elements h4, .sect-10-elements h4, .sect-12-elements h4 {
+.sect-4-elements h4, .sect-6-elements h4, .sect-8-elements h4, .sect-10-elements h4, .sect-12-elements h4, .sect-14-elements h4 {
     font-size: 1vw;
     color: #ffffff;
 }
 
-.sect-4-elements p, .sect-6-elements p, .sect-8-elements p, .sect-10-elements p, .sect-12-elements p {
+.sect-4-elements p, .sect-6-elements p, .sect-8-elements p, .sect-10-elements p, .sect-12-elements p, .sect-14-elements p {
     font-size: 4vw;
     color: #ffffff;
     font-weight: 600;
     padding-bottom: 40px;
 }
 
-#section-5, #section-7, #section-9, #section-11, #section-13 {
+#section-5, #section-7, #section-9, #section-11, #section-13, #section-15 {
     position: relative;
     background-color: #ffffff;
     height: 60vh;
@@ -241,22 +241,22 @@ html, body {
     align-items: center;
 }
 
-.sec-5-left, .sec-5-right, .sec-7-left, .sec-7-right, .sec-9-left, .sec-9-right, .sec-11-left, .sec-11-right, .sec-13-left, .sec-13-right {
+.sec-5-left, .sec-5-right, .sec-7-left, .sec-7-right, .sec-9-left, .sec-9-right, .sec-11-left, .sec-11-right, .sec-13-left, .sec-13-right, .sec-15-left, .sec-15-right {
     width: 50%;
     height: 100%;
 }
 
-.sec-5-left, .sec-7-left, .sec-9-left, .sec-11-left, .sec-13-left {
+.sec-5-left, .sec-7-left, .sec-9-left, .sec-11-left, .sec-13-left, .sec-15-left {
     display: flex;
     align-items: flex-start;
 }
 
-.sec-5-left h3, .sec-7-left h3, .sec-9-left h3, .sec-11-left h3, .sec-13-left h3 {
+.sec-5-left h3, .sec-7-left h3, .sec-9-left h3, .sec-11-left h3, .sec-13-left h3, .sec-15-left h3 {
     font-size: 2.5rem;
     padding-left: 5vw;
 }
 
-.sec-5-right p, .sec-7-right p, .sec-9-right p, .sec-11-right p, .sec-13-right p {
+.sec-5-right p, .sec-7-right p, .sec-9-right p, .sec-11-right p, .sec-13-right p, .sec-15-right p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -264,7 +264,7 @@ html, body {
     padding-right: 5vw;
 }
 
-.sec-5-right > button, .sec-7-right > button, .sec-9-right > button, .sec-11-right > button, .sec-13-right > button {
+.sec-5-right > button, .sec-7-right > button, .sec-9-right > button, .sec-11-right > button, .sec-13-right > button, .sec-15-right > button {
     margin-top: 60px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -275,7 +275,7 @@ html, body {
     color: #ffffff;
 }
 
-.sec-5-right > button:hover, .sec-7-right > button:hover, .sec-9-right > button:hover, .sec-11-right > button:hover, .sec-13-right > button:hover {
+.sec-5-right > button:hover, .sec-7-right > button:hover, .sec-9-right > button:hover, .sec-11-right > button:hover, .sec-13-right > button:hover, .sec-15-right > button:hover {
     background-color: #ff7d20;
     color: #ffffff;
     cursor: pointer;
@@ -287,6 +287,7 @@ html, body {
     margin-top: 20px;
     color: #0071e8 !important;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .sec-link:hover {
