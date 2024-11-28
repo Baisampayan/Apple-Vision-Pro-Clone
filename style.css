@@ -322,3 +322,17 @@ html, body {
     color: #86868b;
     padding: 3vw 13vw;
 }
+
+#section-17 {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+}
+
+#section-17>canvas {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}

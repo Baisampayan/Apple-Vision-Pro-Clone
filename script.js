@@ -269,3 +269,293 @@ var timeLine7 = gsap.timeline({
 timeLine7.to("#section-14>.sect-14-elements", {
     top: "-30%",
 })
+
+
+function canvas2() {
+    const canvas = document.querySelector("#section-17>canvas");
+    const context = canvas.getContext("2d");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+
+    window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    render();
+    });
+
+    function files(index) {
+    var data = `
+        // paste all images here!!
+        ./assets/images/0000.jpg
+        ./assets/images/0001.jpg
+        ./assets/images/0002.jpg
+        ./assets/images/0003.jpg
+        ./assets/images/0004.jpg
+        ./assets/images/0005.jpg
+        ./assets/images/0006.jpg
+        ./assets/images/0007.jpg
+        ./assets/images/0008.jpg
+        ./assets/images/0009.jpg
+        ./assets/images/0010.jpg
+        ./assets/images/0011.jpg
+        ./assets/images/0012.jpg
+        ./assets/images/0013.jpg
+        ./assets/images/0014.jpg
+        ./assets/images/0015.jpg
+        ./assets/images/0016.jpg
+        ./assets/images/0017.jpg
+        ./assets/images/0018.jpg
+        ./assets/images/0019.jpg
+        ./assets/images/0020.jpg
+        ./assets/images/0021.jpg
+        ./assets/images/0022.jpg
+        ./assets/images/0023.jpg
+        ./assets/images/0024.jpg
+        ./assets/images/0025.jpg
+        ./assets/images/0026.jpg
+        ./assets/images/0027.jpg
+        ./assets/images/0028.jpg
+        ./assets/images/0029.jpg
+        ./assets/images/0030.jpg
+        ./assets/images/0031.jpg
+        ./assets/images/0032.jpg
+        ./assets/images/0033.jpg
+        ./assets/images/0034.jpg
+        ./assets/images/0035.jpg
+        ./assets/images/0036.jpg
+        ./assets/images/0037.jpg
+        ./assets/images/0038.jpg
+        ./assets/images/0039.jpg
+        ./assets/images/0040.jpg
+        ./assets/images/0041.jpg
+        ./assets/images/0042.jpg
+        ./assets/images/0043.jpg
+        ./assets/images/0044.jpg
+        ./assets/images/0045.jpg
+        ./assets/images/0046.jpg
+        ./assets/images/0047.jpg
+        ./assets/images/0048.jpg
+        ./assets/images/0049.jpg
+        ./assets/images/0050.jpg
+        ./assets/images/0051.jpg
+        ./assets/images/0052.jpg
+        ./assets/images/0053.jpg
+        ./assets/images/0054.jpg
+        ./assets/images/0055.jpg
+        ./assets/images/0056.jpg
+        ./assets/images/0057.jpg
+        ./assets/images/0058.jpg
+        ./assets/images/0059.jpg
+        ./assets/images/0060.jpg
+        ./assets/images/0061.jpg
+        ./assets/images/0062.jpg
+        ./assets/images/0063.jpg
+        ./assets/images/0064.jpg
+        ./assets/images/0065.jpg
+        ./assets/images/0066.jpg
+        ./assets/images/0067.jpg
+        ./assets/images/0068.jpg
+        ./assets/images/0069.jpg
+        ./assets/images/0070.jpg
+        ./assets/images/0071.jpg
+        ./assets/images/0072.jpg
+        ./assets/images/0073.jpg
+        ./assets/images/0074.jpg
+        ./assets/images/0075.jpg
+        ./assets/images/0076.jpg
+        ./assets/images/0077.jpg
+        ./assets/images/0078.jpg
+        ./assets/images/0079.jpg
+        ./assets/images/0080.jpg
+        ./assets/images/0081.jpg
+        ./assets/images/0082.jpg
+        ./assets/images/0083.jpg
+        ./assets/images/0084.jpg
+        ./assets/images/0085.jpg
+        ./assets/images/0086.jpg
+        ./assets/images/0087.jpg
+        ./assets/images/0088.jpg
+        ./assets/images/0089.jpg
+        ./assets/images/0090.jpg
+        ./assets/images/0091.jpg
+        ./assets/images/0092.jpg
+        ./assets/images/0093.jpg
+        ./assets/images/0094.jpg
+        ./assets/images/0095.jpg
+        ./assets/images/0096.jpg
+        ./assets/images/0097.jpg
+        ./assets/images/0098.jpg
+        ./assets/images/0099.jpg
+        ./assets/images/0100.jpg
+        ./assets/images/0101.jpg
+        ./assets/images/0102.jpg
+        ./assets/images/0103.jpg
+        ./assets/images/0104.jpg
+        ./assets/images/0105.jpg
+        ./assets/images/0106.jpg
+        ./assets/images/0107.jpg
+        ./assets/images/0108.jpg
+        ./assets/images/0109.jpg
+        ./assets/images/0110.jpg
+        ./assets/images/0111.jpg
+        ./assets/images/0112.jpg
+        ./assets/images/0113.jpg
+        ./assets/images/0114.jpg
+        ./assets/images/0115.jpg
+        ./assets/images/0116.jpg
+        ./assets/images/0117.jpg
+        ./assets/images/0118.jpg
+        ./assets/images/0119.jpg
+        ./assets/images/0120.jpg
+        ./assets/images/0121.jpg
+        ./assets/images/0122.jpg
+        ./assets/images/0123.jpg
+        ./assets/images/0124.jpg
+        ./assets/images/0125.jpg
+        ./assets/images/0126.jpg
+        ./assets/images/0127.jpg
+        ./assets/images/0128.jpg
+        ./assets/images/0129.jpg
+        ./assets/images/0130.jpg
+        ./assets/images/0131.jpg
+        ./assets/images/0132.jpg
+        ./assets/images/0133.jpg
+        ./assets/images/0134.jpg
+        ./assets/images/0135.jpg
+        ./assets/images/0136.jpg
+        ./assets/images/0137.jpg
+        ./assets/images/0138.jpg
+        ./assets/images/0139.jpg
+        ./assets/images/0140.jpg
+        ./assets/images/0141.jpg
+        ./assets/images/0142.jpg
+        ./assets/images/0143.jpg
+        ./assets/images/0144.jpg
+        ./assets/images/0145.jpg
+        ./assets/images/0146.jpg
+        ./assets/images/0147.jpg
+        ./assets/images/0148.jpg
+        ./assets/images/0149.jpg
+        ./assets/images/0150.jpg
+        ./assets/images/0151.jpg
+        ./assets/images/0152.jpg
+        ./assets/images/0153.jpg
+        ./assets/images/0154.jpg
+        ./assets/images/0155.jpg
+        ./assets/images/0156.jpg
+        ./assets/images/0157.jpg
+        ./assets/images/0158.jpg
+        ./assets/images/0159.jpg
+        ./assets/images/0160.jpg
+        ./assets/images/0161.jpg
+        ./assets/images/0162.jpg
+        ./assets/images/0163.jpg
+        ./assets/images/0164.jpg
+        ./assets/images/0165.jpg
+        ./assets/images/0166.jpg
+        ./assets/images/0167.jpg
+        ./assets/images/0168.jpg
+        ./assets/images/0169.jpg
+        ./assets/images/0170.jpg
+        ./assets/images/0171.jpg
+        ./assets/images/0172.jpg
+        ./assets/images/0173.jpg
+        ./assets/images/0174.jpg
+        ./assets/images/0175.jpg
+        ./assets/images/0176.jpg
+        ./assets/images/0177.jpg
+        ./assets/images/0178.jpg
+        ./assets/images/0179.jpg
+        ./assets/images/0180.jpg
+        ./assets/images/0181.jpg
+        ./assets/images/0182.jpg
+        ./assets/images/0183.jpg
+        ./assets/images/0184.jpg
+        ./assets/images/0185.jpg
+        ./assets/images/0186.jpg
+        ./assets/images/0187.jpg
+        ./assets/images/0188.jpg
+        ./assets/images/0189.jpg
+        ./assets/images/0190.jpg
+        ./assets/images/0191.jpg
+        ./assets/images/0192.jpg
+        ./assets/images/0193.jpg
+        ./assets/images/0194.jpg
+        ./assets/images/0195.jpg
+        ./assets/images/0196.jpg
+        ./assets/images/0197.jpg
+        ./assets/images/0198.jpg
+        ./assets/images/0199.jpg
+
+    `;
+    return data.split("\n")[index];
+    }
+
+    const frameCount = 200;
+
+    const images = [];
+    const imageSeq = {
+    frame: 1,
+    };
+
+    for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = files(i);
+    images.push(img);
+    }
+
+    gsap.to(imageSeq, {
+    frame: frameCount - 1,
+    snap: "frame",
+    ease: `none`,
+    scrollTrigger: {
+        scrub: 0.15,
+        trigger: `#section-17`,
+        //   set start end according to preference
+        start: `top top`,
+        end: `600% top`,
+        scroller: `#main`,
+    },
+    onUpdate: render,
+    });
+
+    images[1].onload = render;
+
+    function render() {
+    scaleImage(images[imageSeq.frame], context);
+    }
+
+    function scaleImage(img, ctx) {
+    var canvas = ctx.canvas;
+    var hRatio = canvas.width / img.width;
+    var vRatio = canvas.height / img.height;
+    var ratio = Math.max(hRatio, vRatio);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+        img,
+        0,
+        0,
+        img.width,
+        img.height,
+        centerShift_x,
+        centerShift_y,
+        img.width * ratio,
+        img.height * ratio
+    );
+    }
+    ScrollTrigger.create({
+
+    trigger: "#section-17",
+    pin: true,
+    // markers:true,
+    scroller: `#main`,
+    //   set start end according to preference
+    start: `top top`,
+    end: `600% top`,
+    });
+}
+canvas2();
