@@ -549,7 +549,7 @@ function canvas2() {
     }
     ScrollTrigger.create({
 
-    trigger: "#section-17",
+    trigger: "#section-17>canvas",
     pin: true,
     // markers:true,
     scroller: `#main`,

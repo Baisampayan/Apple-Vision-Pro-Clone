@@ -336,3 +336,45 @@ html, body {
     width: 100vw;
     z-index: 999;
 }
+
+#section-18 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+#section-19 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
+
+#section-20 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+#section-21 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
+
+#section-22 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+#section-23 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
