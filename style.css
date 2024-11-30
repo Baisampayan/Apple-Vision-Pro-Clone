@@ -374,17 +374,12 @@ html, body {
 
 #section-24 {
     position: relative;
-    /* height: 100vh; */
     width: 100vw;
     background-color: #ffffff;
-    padding: 7vh 10vw;
+    padding: 7vh 10vw 2vh 10vw;
     display: flex;
     align-items: center;
 }
-
-/* #section-24 img {
-    width: 95%;
-} */
 
 #section-24-left {
     margin-right: 20px;
@@ -392,4 +387,11 @@ html, body {
 
 #section-24-right {
     margin-left: 20px;
+}
+
+#section-25 {
+    position: relative;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 1vh 10vw 7vh 10vw;
 }
