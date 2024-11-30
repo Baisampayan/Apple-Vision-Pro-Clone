@@ -306,7 +306,7 @@ html, body {
     flex-direction: column;
 }
 
-#section-16 h3 {
+#section-16 h3, #section-28 h3 {
     font-size: 2rem;
 }
 
@@ -314,7 +314,7 @@ html, body {
     font-size: 4rem;
 }
 
-#section-16 p {
+#section-16 p, #section-28 p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -437,4 +437,30 @@ html, body {
 #section-27 > button {
     position: absolute;
     bottom: 15%;
+}
+
+#section-28 {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #000000;
+    padding: 7vh 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section-28 h3 {
+    color: #ffffff;
+}
+
+#section-28 h2 {
+    color: #ffffff;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+#section-28 span {
+    color: #ffffff;
 }
