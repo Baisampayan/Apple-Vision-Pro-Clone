@@ -445,10 +445,13 @@ html, body {
     width: 100vw;
     background-color: #000000;
     padding: 7vh 15vw;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
+    margin-bottom: -45vh;
+    z-index: 9;
 }
 
 #section-28 h3 {
