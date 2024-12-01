@@ -503,3 +503,15 @@ html, body {
 #section-30 p {
     padding: 1vw 20vw;
 }
+
+#section-31 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#section-31 video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
