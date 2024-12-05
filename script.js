@@ -674,3 +674,19 @@ function canvas3() {
     });
 }
 canvas3();
+
+var timeLine8 = gsap.timeline({
+    scrollTrigger: {
+        trigger: `#section-33`,
+        start: `top top`,
+        end:`10% top`,
+        scrub: 1,
+        scroller:`#main`,
+        // markers: true,
+        // pin: true
+    }
+})
+
+timeLine8.to("#section-33>#tracking-off", {
+    opacity: 0,
+})

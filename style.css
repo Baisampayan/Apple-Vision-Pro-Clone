@@ -314,7 +314,7 @@ html, body {
     font-size: 4rem;
 }
 
-#section-16 p, #section-28 p, #section-30 p {
+#section-16 p, #section-28 p, #section-30 p, #section-34 p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -454,7 +454,7 @@ html, body {
     z-index: 9;
 }
 
-#section-28 h3, #section-30 h3 {
+#section-28 h3, #section-30 h3, #section-34 h3 {
     color: #ffffff;
 }
 
@@ -464,7 +464,7 @@ html, body {
     line-height: 5rem;
 }
 
-#section-28 span, #section-30 span {
+#section-28 span, #section-30 span, #section-34 span {
     color: #ffffff;
 }
 
@@ -483,7 +483,7 @@ html, body {
     height: 100vh;
 }
 
-#section-30 {
+#section-30, #section-34 {
     position: relative;
     height: 30vh;
     width: 100vw;
@@ -496,11 +496,11 @@ html, body {
     margin-top: -15vh;
 }
 
-#section-30 h3 {
+#section-30 h3, #section-34 h3 {
     font-size: 2rem;
 }
 
-#section-30 p {
+#section-30 p,#section-34 p {
     padding: 1vw 20vw;
 }
 
@@ -523,6 +523,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: end;
+    z-index: 5;
+    margin-top: -5px;
 }
 
 #sec-32-ele{
@@ -548,4 +550,29 @@ html, body {
 
 #sec-32-ele p span {
     color: #ffffff;
+}
+
+#section-33 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    margin-top: -10px;
+}
+
+#section-33 #tracking-off {
+    position: absolute;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#section-33 #tracking-on {
+    position: absolute;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
