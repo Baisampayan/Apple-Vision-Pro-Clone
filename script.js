@@ -690,3 +690,19 @@ var timeLine8 = gsap.timeline({
 timeLine8.to("#section-33>#tracking-off", {
     opacity: 0,
 })
+
+var timeLine9 = gsap.timeline({
+    scrollTrigger: {
+        trigger: `#section-35`,
+        start: `top top`,
+        end:`50% bottom`,
+        scrub: 1,
+        scroller:`#main`,
+        // markers: true,
+        // pin: true
+    }
+})
+
+timeLine9.to("#section-35>#sensors-off", {
+    opacity: 0,
+})
