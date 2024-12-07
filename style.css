@@ -314,7 +314,7 @@ html, body {
     font-size: 4rem;
 }
 
-#section-16 p, #section-28 p, #section-30 p, #section-34 p, #section-36 p {
+#section-16 p, #section-28 p, #section-30 p, #section-34 p, #section-36 p, #section-38 p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -454,7 +454,7 @@ html, body {
     z-index: 9;
 }
 
-#section-28 h3, #section-30 h3, #section-34 h3, #section-36 h3 {
+#section-28 h3, #section-30 h3, #section-34 h3, #section-36 h3, #section-38 h3 {
     color: #ffffff;
 }
 
@@ -464,7 +464,7 @@ html, body {
     line-height: 5rem;
 }
 
-#section-28 span, #section-30 span, #section-34 span, #section-36 span {
+#section-28 span, #section-30 span, #section-34 span, #section-36 span, #section-38 span {
     color: #ffffff;
 }
 
@@ -496,11 +496,11 @@ html, body {
     margin-top: -15vh;
 }
 
-#section-30 h3, #section-34 h3, #section-36 h3 {
+#section-30 h3, #section-34 h3, #section-36 h3, #section-38 h3 {
     font-size: 2rem;
 }
 
-#section-30 p,#section-34 p, #section-36 p {
+#section-30 p,#section-34 p, #section-36 p, #section-38 p {
     padding: 1vw 20vw;
 }
 
@@ -575,4 +575,66 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#section-36>.sec-link {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: -15vh;
+}
+
+#section-36>.sec-link:hover {
+    text-decoration: none;
+}
+
+#section-37 {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    margin-top: -5px;
+}
+
+#section-37 img {
+    height: auto;
+    width: 60%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#section-38 {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background-color: #000000;
+    padding: 3vh 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: -15vh;
+}
+
+#section-38 h3 {
+    text-align: center;
+}
+
+#section-38 > button {
+    margin-top: 60px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    color: #000000;
+}
+
+#section-38 > button:hover {
+    background-color: #ffffffe6;
+    border: 3px solid #ffffffe6;
+    transition: all ease-in;
 }

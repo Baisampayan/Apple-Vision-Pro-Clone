@@ -706,3 +706,14 @@ var timeLine9 = gsap.timeline({
 timeLine9.to("#section-35>#sensors-off", {
     opacity: 0,
 })
+
+gsap.to("#section-37>img",{
+    scrollTrigger:{
+        trigger:`#section-37>img`,
+        start:`top bottom`,
+        end:`bottom 60%`,
+        scrub:.5,
+        scroller:`#main`
+    },
+    opacity:1
+})
