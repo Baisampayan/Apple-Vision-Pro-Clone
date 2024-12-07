@@ -314,7 +314,7 @@ html, body {
     font-size: 4rem;
 }
 
-#section-16 p, #section-28 p, #section-30 p, #section-34 p {
+#section-16 p, #section-28 p, #section-30 p, #section-34 p, #section-36 p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -454,7 +454,7 @@ html, body {
     z-index: 9;
 }
 
-#section-28 h3, #section-30 h3, #section-34 h3 {
+#section-28 h3, #section-30 h3, #section-34 h3, #section-36 h3 {
     color: #ffffff;
 }
 
@@ -464,7 +464,7 @@ html, body {
     line-height: 5rem;
 }
 
-#section-28 span, #section-30 span, #section-34 span {
+#section-28 span, #section-30 span, #section-34 span, #section-36 span {
     color: #ffffff;
 }
 
@@ -483,7 +483,7 @@ html, body {
     height: 100vh;
 }
 
-#section-30, #section-34 {
+#section-30, #section-34, #section-36 {
     position: relative;
     height: 30vh;
     width: 100vw;
@@ -496,11 +496,11 @@ html, body {
     margin-top: -15vh;
 }
 
-#section-30 h3, #section-34 h3 {
+#section-30 h3, #section-34 h3, #section-36 h3 {
     font-size: 2rem;
 }
 
-#section-30 p,#section-34 p {
+#section-30 p,#section-34 p, #section-36 p {
     padding: 1vw 20vw;
 }
 
