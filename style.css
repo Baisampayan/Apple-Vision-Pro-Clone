@@ -781,3 +781,11 @@ html, body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+#footer {
+    padding: 1vw 10vw;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.8vw;
+    text-align: center;
+}
