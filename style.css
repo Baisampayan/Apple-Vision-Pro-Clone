@@ -665,7 +665,7 @@ html, body {
     margin-bottom: 5vh;
 }
 
-#sec-40-left {
+#sec-40-left, #sec-41-left {
     background-color: #f5f5f7;
     width: 100%;
     display: flex;
@@ -676,7 +676,7 @@ html, body {
     padding-right: 5vw;
 }
 
-#sec-40-left h2 {
+#sec-40-left h2,#sec-41-left h2 {
     font-size: 3.5rem;
     font-weight: 500;
     line-height: 3.5rem;
@@ -696,4 +696,38 @@ html, body {
     justify-content: end;
     align-items: start;
     flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#section-41 {
+    position: relative;
+    background-color: #ffffff;
+    margin: 0vh 10vw;
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    margin-bottom: 5vh;
+}
+
+#sec-41-left p {
+    font-size: 1.5rem;
+    color: #06c;
+    margin-top: 2vh;
+}
+
+#sec-41-left p:hover > span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#sec-41-right {
+    background-color: #f5f5f7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
