@@ -264,7 +264,7 @@ html, body {
     padding-right: 5vw;
 }
 
-.sec-5-right > button, .sec-7-right > button, .sec-9-right > button, .sec-11-right > button, .sec-13-right > button, .sec-15-right > button, #section-27 > button {
+.sec-5-right > button, .sec-7-right > button, .sec-9-right > button, .sec-11-right > button, .sec-13-right > button, .sec-15-right > button, #section-27 > button, #section-39 > button {
     margin-top: 60px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -275,7 +275,7 @@ html, body {
     color: #ffffff;
 }
 
-.sec-5-right > button:hover, .sec-7-right > button:hover, .sec-9-right > button:hover, .sec-11-right > button:hover, .sec-13-right > button:hover, .sec-15-right > button:hover, #section-27 > button:hover {
+.sec-5-right > button:hover, .sec-7-right > button:hover, .sec-9-right > button:hover, .sec-11-right > button:hover, .sec-13-right > button:hover, .sec-15-right > button:hover, #section-27 > button:hover, #section-39 > button:hover {
     background-color: #ff7d20;
     color: #ffffff;
     cursor: pointer;
@@ -294,7 +294,7 @@ html, body {
     text-decoration: underline;
 }
 
-#section-16 {
+#section-16, #section-39 {
     position: relative;
     height: 70vh;
     width: 100vw;
@@ -306,15 +306,15 @@ html, body {
     flex-direction: column;
 }
 
-#section-16 h3, #section-28 h3 {
+#section-16 h3, #section-28 h3, #section-39 h3 {
     font-size: 2rem;
 }
 
-#section-16 h2 {
+#section-16 h2, #section-39 h2 {
     font-size: 4rem;
 }
 
-#section-16 p, #section-28 p, #section-30 p, #section-34 p, #section-36 p, #section-38 p {
+#section-16 p, #section-28 p, #section-30 p, #section-34 p, #section-36 p, #section-38 p, #section-39 p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -618,7 +618,7 @@ html, body {
     margin-top: -15vh;
 }
 
-#section-38 h3 {
+#section-38 h3, #section-39 h2 {
     text-align: center;
 }
 
@@ -637,4 +637,20 @@ html, body {
     background-color: #ffffffe6;
     border: 3px solid #ffffffe6;
     transition: all ease-in;
+}
+
+#section-39 {
+    background-color: #ffffff;
+}
+
+#section-39 P {
+    width: 90%;
+}
+
+#section-39 span {
+    color: #000000;
+}
+
+#section-39 > button {
+    margin-top: 0PX;
 }
